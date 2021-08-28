@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechMely/eslint-config-ts.git"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "copy-readme-to-packages": "node -r sucrase/register scripts/copyReadmeToPackages",

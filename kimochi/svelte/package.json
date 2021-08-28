@@ -5,6 +5,10 @@
   "keywords": [],
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechMely/eslint-config-ts/tree/main/kimochi/svelte"
+  },
   "files": [
     "index.js",
     "README.md"
@@ -17,5 +21,8 @@
     "eslint": "^7.32.0",
     "typescript": "^4.4.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@techmely/eslint-config-ts": "0.0.1",
+    "eslint-plugin-svelte3": "^3.2.0"
+  }
 }

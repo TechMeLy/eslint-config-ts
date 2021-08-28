@@ -5,6 +5,10 @@
   "keywords": [],
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechMely/eslint-config-ts/tree/main/kimochi/typescript"
+  },
   "files": [
     "index.js",
     "README.md"

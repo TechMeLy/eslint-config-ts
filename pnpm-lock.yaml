@@ -18,16 +18,23 @@ importers:
 
   kimochi/react:
     specifiers:
+      '@techmely/eslint-config-ts': 0.0.1
       eslint-plugin-jsx-a11y: ^6.4.1
       eslint-plugin-react: ^7.24.0
       eslint-plugin-react-hooks: ^4.2.0
     dependencies:
+      '@techmely/eslint-config-ts': link:../typescript
       eslint-plugin-jsx-a11y: 6.4.1
       eslint-plugin-react: 7.24.0
       eslint-plugin-react-hooks: 4.2.0
 
   kimochi/svelte:
-    specifiers: {}
+    specifiers:
+      '@techmely/eslint-config-ts': 0.0.1
+      eslint-plugin-svelte3: ^3.2.0
+    dependencies:
+      '@techmely/eslint-config-ts': link:../typescript
+      eslint-plugin-svelte3: 3.2.0
 
   kimochi/typescript:
     specifiers:
@@ -59,8 +66,10 @@ importers:
 
   kimochi/vue:
     specifiers:
+      '@techmely/eslint-config-ts': 0.0.1
       eslint-plugin-vue: ^7.17.0
     dependencies:
+      '@techmely/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 7.17.0
 
 packages:
@@ -1281,6 +1290,14 @@ packages:
     resolution: {integrity: sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==}
     peerDependencies:
       eslint: '>=5.0.0'
+    dev: false
+
+  /eslint-plugin-svelte3/3.2.0:
+    resolution: {integrity: sha512-qdWB1QN21dEozsJFdR8XlEhMnsS6aKHjsXWuNmchYwxoet5I6QdCr1Xcq62++IzRBMCNCeH4waXqSOAdqrZzgA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: '>=6.0.0'
+      svelte: ^3.2.0
     dev: false
 
   /eslint-plugin-unicorn/35.0.0:
