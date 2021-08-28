@@ -4,15 +4,12 @@
   "description": "Eslint base config for typescript project",
   "keywords": [],
   "license": "MIT",
-  "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
+  "author": "Harry Tran <nhattq.coding@gmail.com> (https://github.com/harrytran998)",
   "files": [
     "index.js",
     "README.md"
   ],
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
     "eslint": "^7.32.0",
     "typescript": "^4.4.2"
