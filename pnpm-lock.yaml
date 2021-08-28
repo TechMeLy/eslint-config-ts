@@ -18,7 +18,7 @@ importers:
 
   kimochi/react:
     specifiers:
-      '@techmely/eslint-config-ts': ^0.0.3
+      '@techmely/eslint-config-ts': ^0.0.4
       eslint-plugin-jsx-a11y: ^6.4.1
       eslint-plugin-react: ^7.24.0
       eslint-plugin-react-hooks: ^4.2.0
@@ -30,7 +30,7 @@ importers:
 
   kimochi/svelte:
     specifiers:
-      '@techmely/eslint-config-ts': ^0.0.3
+      '@techmely/eslint-config-ts': ^0.0.4
       eslint-plugin-svelte3: ^3.2.0
     dependencies:
       '@techmely/eslint-config-ts': link:../typescript
@@ -68,7 +68,7 @@ importers:
 
   kimochi/vue:
     specifiers:
-      '@techmely/eslint-config-ts': ^0.0.3
+      '@techmely/eslint-config-ts': ^0.0.4
       eslint-plugin-vue: ^7.17.0
     dependencies:
       '@techmely/eslint-config-ts': link:../typescript
