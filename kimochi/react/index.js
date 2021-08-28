@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:react/recommended', '@harry/eslint-config-ts'],
+  extends: ['plugin:react/recommended', '@techmely/eslint-config-ts'],
   settings: {
     react: {
       version: '17.0',
@@ -8,4 +8,4 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
   },
-}
+};

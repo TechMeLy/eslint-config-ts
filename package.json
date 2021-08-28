@@ -1,24 +1,19 @@
 {
-  "name": "@harry/eslint-config-ts",
+  "name": "@techmely/eslint-config",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Harry Tran <nhattq.coding@gmail.com> (https://github.com/harrytran998)",
-  "private": true,
+  "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "copy-readme-to-packages": "node -r esbuild-register scripts/copyReadmeToPackages",
+    "copy-readme-to-packages": "node -r sucrase/register scripts/copyReadmeToPackages",
     "version": "changeset version && pnpm install",
     "release": "pnpm copy-readme-to-packages && changeset publish"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.0",
     "@changesets/cli": "^2.16.0",
-    "esbuild-register": "^3.0.0",
+    "sucrase": "^3.0.0",
     "fast-glob": "^3.2.7",
-    "prettier": "^2.3.2",
-    "esbuild": "0.12.24"
-  },
-  "resolutions": {
-    "esbuild": "0.12.24"
+    "prettier": "^2.3.2"
   }
 }

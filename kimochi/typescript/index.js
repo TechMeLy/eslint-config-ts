@@ -23,7 +23,7 @@ module.exports = {
     'plugin:yml/standard',
     'plugin:jest/recommended',
   ],
-  plugins: ['html'],
+  plugins: ['html', 'simple-import-sort'],
   settings: {
     // Apply special parsing for TypeScript files
     'import/parsers': {
@@ -54,14 +54,7 @@ module.exports = {
         selector: 'variable',
         types: ['boolean'],
         format: ['PascalCase'],
-        prefix: [
-          'is',
-          'should',
-          'has',
-          'can',
-          'did',
-          'will',
-        ],
+        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
       },
       {
         selector: 'function',
@@ -311,6 +304,11 @@ module.exports = {
     'no-bitwise': ['error', { allow: ['|'] }],
     'no-underscore-dangle': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
   },
   overrides: [
     {
@@ -348,7 +346,7 @@ module.exports = {
       files: ['*.json', '*.json5'],
       parser: 'jsonc-eslint-parser',
       rules: {
-        'quotes': ['error', 'double'],
+        quotes: ['error', 'double'],
         'quote-props': ['error', 'always'],
         'comma-dangle': ['error', 'never'],
       },

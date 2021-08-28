@@ -1,10 +1,10 @@
 {
-  "name": "@harry/eslint-config-ts",
+  "name": "@techmely/eslint-config-ts",
   "version": "0.0.1",
   "description": "Eslint base config for typescript project",
   "keywords": [],
   "license": "MIT",
-  "author": "Harry Tran <nhattq.coding@gmail.com> (https://github.com/harrytran998)",
+  "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "files": [
     "index.js",
     "README.md"

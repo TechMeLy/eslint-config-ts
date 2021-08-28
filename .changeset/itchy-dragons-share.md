@@ -1,5 +1,5 @@
 ---
-'@harry/eslint-config-ts': major
+'@techmely/eslint-config-ts': major
 ---
 
 Init project with love
