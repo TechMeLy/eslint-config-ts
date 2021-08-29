@@ -1,8 +1,13 @@
 {
   "name": "@techmely/eslint-config-react-ts",
-  "version": "0.0.4",
-  "description": "",
-  "keywords": [],
+  "version": "0.0.5",
+  "description": "Eslint config for React + Typescript project",
+  "keywords": [
+    "eslint",
+    "react",
+    "typescript",
+    "cypress"
+  ],
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "repository": {
@@ -25,6 +30,7 @@
     "@techmely/eslint-config-ts": "^0.0.4",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-cypress": "^2.11.3"
   }
 }

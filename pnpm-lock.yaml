@@ -19,11 +19,13 @@ importers:
   kimochi/react:
     specifiers:
       '@techmely/eslint-config-ts': ^0.0.4
+      eslint-plugin-cypress: ^2.11.3
       eslint-plugin-jsx-a11y: ^6.4.1
       eslint-plugin-react: ^7.24.0
       eslint-plugin-react-hooks: ^4.2.0
     dependencies:
-      '@techmely/eslint-config-ts': link:../typescript
+      '@techmely/eslint-config-ts': 0.0.4
+      eslint-plugin-cypress: 2.11.3
       eslint-plugin-jsx-a11y: 6.4.1
       eslint-plugin-react: 7.24.0
       eslint-plugin-react-hooks: 4.2.0
@@ -31,9 +33,11 @@ importers:
   kimochi/svelte:
     specifiers:
       '@techmely/eslint-config-ts': ^0.0.4
+      eslint-plugin-cypress: ^2.11.3
       eslint-plugin-svelte3: ^3.2.0
     dependencies:
-      '@techmely/eslint-config-ts': link:../typescript
+      '@techmely/eslint-config-ts': 0.0.4
+      eslint-plugin-cypress: 2.11.3
       eslint-plugin-svelte3: 3.2.0
 
   kimochi/typescript:
@@ -71,7 +75,7 @@ importers:
       '@techmely/eslint-config-ts': ^0.0.4
       eslint-plugin-vue: ^7.17.0
     dependencies:
-      '@techmely/eslint-config-ts': link:../typescript
+      '@techmely/eslint-config-ts': 0.0.4
       eslint-plugin-vue: 7.17.0
 
 packages:
@@ -534,6 +538,29 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.12.0
+
+  /@techmely/eslint-config-ts/0.0.4:
+    resolution: {integrity: sha512-b300+JLX/9yarosdCRGIpCdbSA/QJhfiYlya1fJ/fZV3RrTehXFx8Z/663hjz4rsmjCrN4MaVCMY0iExptOIxg==}
+    peerDependencies:
+      eslint: ^7.32.0
+      typescript: ^4.4.2
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 4.29.3_@typescript-eslint+parser@4.29.3
+      '@typescript-eslint/parser': 4.29.3
+      eslint-config-airbnb-base: 14.2.1_eslint-plugin-import@2.24.2
+      eslint-config-prettier: 8.3.0
+      eslint-plugin-html: 6.1.2
+      eslint-plugin-import: 2.24.2
+      eslint-plugin-jest: 24.4.0_f56de5161e43747d9d82fcdf1d245b16
+      eslint-plugin-jsonc: 1.6.0
+      eslint-plugin-promise: 5.1.0
+      eslint-plugin-simple-import-sort: 7.0.0
+      eslint-plugin-unicorn: 35.0.0
+      eslint-plugin-yml: 0.10.0
+      yaml-eslint-parser: 0.4.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
@@ -1202,6 +1229,14 @@ packages:
     dependencies:
       debug: 3.2.7
       pkg-dir: 2.0.0
+    dev: false
+
+  /eslint-plugin-cypress/2.11.3:
+    resolution: {integrity: sha512-hOoAid+XNFtpvOzZSNWP5LDrQBEJwbZwjib4XJ1KcRYKjeVj0mAmPmucG4Egli4j/aruv+Ow/acacoloWWCl9Q==}
+    peerDependencies:
+      eslint: '>= 3.2.1'
+    dependencies:
+      globals: 11.12.0
     dev: false
 
   /eslint-plugin-html/6.1.2:

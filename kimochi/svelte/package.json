@@ -1,8 +1,13 @@
 {
   "name": "@techmely/eslint-config-svelte-ts",
-  "version": "0.0.4",
-  "description": "",
-  "keywords": [],
+  "version": "0.0.5",
+  "description": "Eslint config for Svelte + Typescript project",
+  "keywords": [
+    "eslint",
+    "svelte",
+    "typescript",
+    "cypress"
+  ],
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "repository": {
@@ -23,6 +28,7 @@
   },
   "dependencies": {
     "@techmely/eslint-config-ts": "^0.0.4",
-    "eslint-plugin-svelte3": "^3.2.0"
+    "eslint-plugin-svelte3": "^3.2.0",
+    "eslint-plugin-cypress": "^2.11.3"
   }
 }

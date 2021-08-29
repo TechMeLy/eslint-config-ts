@@ -13,6 +13,9 @@ module.exports = {
     es6: true,
     jest: true,
   },
+  globals: {
+    __DEV__: true,
+  },
   extends: [
     'eslint-config-airbnb-base',
     'plugin:@typescript-eslint/recommended',

@@ -4,6 +4,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:cypress/recommended',
   ],
   settings: {
     react: {

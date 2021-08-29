@@ -1,8 +1,13 @@
 {
   "name": "@techmely/eslint-config-vue-ts",
-  "version": "0.0.4",
-  "description": "",
-  "keywords": [],
+  "version": "0.0.5",
+  "description": "Eslint config for Vue + Typescript project",
+  "keywords": [
+    "eslint",
+    "vue",
+    "typescript",
+    "cypress"
+  ],
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "repository": {
