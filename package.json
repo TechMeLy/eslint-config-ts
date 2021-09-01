@@ -1,23 +1,25 @@
 {
   "name": "@techmely/eslint-config",
-  "version": "0.1.0",
+  "version": "9.6.9",
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "repository": {
     "type": "git",
     "url": "https://github.com/TechMely/eslint-config-ts.git"
   },
+  "workspaces": [
+    "kimochi/*"
+  ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "npx only-allow yarn",
     "copy-readme-to-packages": "node -r sucrase/register scripts/copyReadmeToPackages",
-    "version": "changeset version && pnpm install",
-    "release": "pnpm copy-readme-to-packages && changeset publish"
+    "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish --access public",
+    "bump": "yarn version apply --all"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.4.0",
-    "@changesets/cli": "^2.16.0",
     "fast-glob": "^3.2.7",
     "prettier": "^2.3.2",
     "sucrase": "^3.20.1"
-  }
+  },
+  "packageManager": "yarn@3.0.1"
 }

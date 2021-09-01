@@ -1,19 +1,9 @@
 {
   "name": "@techmely/eslint-config-svelte-ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Eslint config for Svelte + Typescript project",
-  "keywords": [
-    "eslint",
-    "svelte",
-    "typescript",
-    "cypress"
-  ],
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TechMely/eslint-config-ts/tree/main/kimochi/svelte"
-  },
   "files": [
     "index.js",
     "README.md"
@@ -22,13 +12,33 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "version": "yarn version"
+  },
   "peerDependencies": {
     "eslint": "^7.32.0",
+    "svelte": "^3.42.4",
     "typescript": "^4.4.2"
   },
   "dependencies": {
     "@techmely/eslint-config-ts": "^0.0.4",
-    "eslint-plugin-svelte3": "^3.2.0",
-    "eslint-plugin-cypress": "^2.11.3"
-  }
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-svelte3": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechMely/eslint-config-ts/tree/main/kimochi/svelte"
+  },
+  "bugs": {
+    "url": "https://github.com/TechMely/eslint-config-ts/issues"
+  },
+  "maintainers": [
+    "harrytran998"
+  ],
+  "keywords": [
+    "eslint",
+    "svelte",
+    "typescript",
+    "cypress"
+  ]
 }

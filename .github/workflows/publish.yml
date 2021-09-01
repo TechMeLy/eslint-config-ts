@@ -13,22 +13,24 @@ jobs:
       CI: true
     steps:
       - uses: actions/checkout@main
-      - name: Setup Node.js 14.x
-        uses: actions/setup-node@main
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
+      - uses: actions/cache@v1
         with:
-          node-version: 14.x
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Install pnpm
-        run: npm i -g pnpm
+      - name: Install dependencies
+        if: steps.yarn-cache-dir-path.outputs.cache-hit != 'true'
+        run: yarn
 
-      - name: Install Dependencies
-        run: pnpm install
+      - name: Check
+        run: yarn bump:check
 
-      - name: Create release PR or publish to npm
-        uses: changesets/action@master
-        with:
-          version: pnpm version
-          publish: pnpm release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Publish to npm
+
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
