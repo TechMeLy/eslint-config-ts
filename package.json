@@ -14,7 +14,8 @@
     "preinstall": "npx only-allow yarn",
     "copy-readme-to-packages": "node -r sucrase/register scripts/copyReadmeToPackages",
     "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish --access public",
-    "bump": "yarn version apply --all"
+    "bump": "yarn version apply --all",
+    "bump:check": "yarn version check"
   },
   "devDependencies": {
     "fast-glob": "^3.2.7",
