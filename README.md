@@ -1,3 +1,5 @@
+Note: this repo is move to `https://github.com/TechMeLy/techmely`.
+
 # Eslint base config with typescript in practice
 
 Basically, this base on `air-bnb-style`
