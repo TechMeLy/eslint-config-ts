@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config",
-  "version": "9.6.9",
+  "version": "9.6.10",
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "repository": {
@@ -12,8 +12,8 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow yarn",
-    "copy-readme-to-packages": "node -r sucrase/register scripts/copyReadmeToPackages",
-    "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish --access public",
+    "copy-readme-to-packages": "sucrase-node scripts/copyReadmeToPackages",
+    "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish",
     "bump": "yarn version apply --all",
     "bump:check": "yarn version check"
   },

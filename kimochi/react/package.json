@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-react-ts",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "description": "Eslint config for React + Typescript project",
   "keywords": [
     "eslint",
@@ -15,9 +15,6 @@
     "README.md"
   ],
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "version": "yarn version"
   },

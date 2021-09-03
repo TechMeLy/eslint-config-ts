@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-vue-ts",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "description": "Eslint config for Vue + Typescript project",
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
@@ -9,9 +9,6 @@
     "README.md"
   ],
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "version": "yarn version"
   },
