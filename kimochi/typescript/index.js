@@ -13,9 +13,6 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  globals: {
-    __DEV__: true,
-  },
   extends: [
     'eslint-config-airbnb-base',
     'plugin:@typescript-eslint/recommended',
@@ -57,7 +54,27 @@ module.exports = {
         selector: 'variable',
         types: ['boolean'],
         format: ['PascalCase'],
-        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+        prefix: [
+          'is',
+          'should',
+          'has',
+          'can',
+          'did',
+          'will',
+          '__DEV__',
+          '__PRODUCTION__',
+          '__TEST__',
+        ],
+      },
+      {
+        // Ignore __COMMIT__ and __VERSION__ variables
+        selector: 'variable',
+        types: ['string'],
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        filter: {
+          regex: '^(__COMMIT__|__VERSION__)$',
+          match: false,
+        },
       },
       {
         selector: 'function',
@@ -67,6 +84,15 @@ module.exports = {
       {
         selector: 'typeLike',
         format: ['PascalCase'],
+      },
+      {
+        // Enforce that interface names do not begin with an I
+        selector: 'interface',
+        format: ['PascalCase'],
+        custom: {
+          regex: '^I[A-Z]',
+          match: false,
+        },
       },
     ],
     'no-param-reassign': [
@@ -355,7 +381,8 @@ module.exports = {
       },
     },
     {
-      files: ['package.json'],
+      // Enforce that package json file will sort with this order
+      files: ['package.json', '**/package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
         'jsonc/sort-keys': [
@@ -366,28 +393,26 @@ module.exports = {
               'name',
               'version',
               'description',
-              'keywords',
+              'author',
               'license',
               'repository',
-              'funding',
-              'author',
-              'type',
-              'files',
-              'exports',
+              'engines',
+              'bin',
+              'source',
               'main',
               'module',
-              'unpkg',
-              'bin',
+              'type',
+              'files',
               'scripts',
               'peerDependencies',
-              'dependencies',
               'peerDependenciesMeta',
+              'dependencies',
               'devDependencies',
+              'exports',
+              'maintainers',
+              'funding',
+              'keywords',
             ],
-          },
-          {
-            pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' },
           },
         ],
       },

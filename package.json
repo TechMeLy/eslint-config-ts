@@ -12,12 +12,14 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow yarn",
-    "copy-readme-to-packages": "sucrase-node scripts/copyReadmeToPackages",
+    "release": "bumpp --commit --push --tag && yarn publish",
     "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish",
+    "copy-readme-to-packages": "sucrase-node scripts/copyReadmeToPackages",
     "bump": "yarn version apply --all",
     "bump:check": "yarn version check"
   },
   "devDependencies": {
+    "bumpp": "^6.0.6",
     "fast-glob": "^3.2.7",
     "prettier": "^2.3.2",
     "sucrase": "^3.20.1"
