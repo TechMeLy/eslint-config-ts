@@ -1,13 +1,13 @@
 # Eslint base config with typescript in practice
 
-Basically, this base on `air-bnb-style` for typescript project
+Basically, this base on `air-bnb-style` for typescript enterprise projects. It's good for DX and might be strict for consistency and professionalism.
 
-Hope you enjoy this with your team!
+Let's try this and it will never let you down! Hope you enjoy this with your team!
 
 ## Install and Use
 
 | Package Manager | Command                                              |
-| --------------- | ---------------------------------------------------  |
+| --------------- | ---------------------------------------------------- |
 | npm             | `npm i --save-dev @techmely/eslint-config-ts`        |
 |                 | `npm i --save-dev @techmely/eslint-config-vue-ts`    |
 |                 | `npm i --save-dev @techmely/eslint-config-react-ts`  |
@@ -16,7 +16,7 @@ Hope you enjoy this with your team!
 |                 | `yarn add -D @techmely/eslint-config-vue-ts`         |
 |                 | `yarn add -D @techmely/eslint-config-react-ts`       |
 |                 | `yarn add -D @techmely/eslint-config-svelte-ts`      |
-| pnpm            | `npm i --save-dev @techmely/eslint-config-ts`        |
+| pnpm            | `pnpm add -D @techmely/eslint-config-ts`             |
 |                 | `pnpm add -D @techmely/eslint-config-vue-ts`         |
 |                 | `pnpm add -D @techmely/eslint-config-react-ts`       |
 |                 | `pnpm add -D @techmely/eslint-config-svelte-ts`      |
@@ -36,7 +36,22 @@ module.exports = {
     },
   },
 };
-
 ```
 
-Note: You can change any rules which you want
+For `.eslintrc` json file
+
+```json
+{
+  "extends": ["@techmely/eslint-config-ts"],
+  "parserOptions": {
+    "tsconfigRootDir": "__dirname",
+    "parser": "@typescript-eslint/parser",
+    "project": ["tsconfig.json"],
+    "ecmaFeatures": {
+      "modules": true
+    }
+  }
+}
+```
+
+### Note: You can change any rules which you want

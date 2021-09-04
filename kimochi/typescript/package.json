@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Eslint base config for typescript project",
   "keywords": [],
   "license": "MIT",
