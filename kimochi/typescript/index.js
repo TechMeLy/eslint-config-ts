@@ -73,7 +73,7 @@ module.exports = {
         format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
         filter: {
           regex: '^(__COMMIT__|__VERSION__)$',
-          match: false,
+          match: true,
         },
       },
       {
