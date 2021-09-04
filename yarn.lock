@@ -330,7 +330,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-react-ts@workspace:kimochi/react"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.4
+    "@techmely/eslint-config-ts": ^0.0.7
     eslint-plugin-cypress: ^2.11.3
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.24.0
@@ -345,7 +345,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-svelte-ts@workspace:kimochi/svelte"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.4
+    "@techmely/eslint-config-ts": ^0.0.7
     eslint-plugin-cypress: ^2.11.3
     eslint-plugin-svelte3: ^3.2.0
   peerDependencies:
@@ -355,31 +355,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@techmely/eslint-config-ts@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@techmely/eslint-config-ts@npm:0.0.4"
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^4.29.3
-    "@typescript-eslint/parser": ^4.29.3
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-config-prettier: ^8.3.0
-    eslint-plugin-html: ^6.1.2
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jest: ^24.4.0
-    eslint-plugin-jsonc: ^1.6.0
-    eslint-plugin-promise: ^5.1.0
-    eslint-plugin-simple-import-sort: ^7.0.0
-    eslint-plugin-unicorn: ^35.0.0
-    eslint-plugin-yml: ^0.10.0
-    yaml-eslint-parser: ^0.4.1
-  peerDependencies:
-    eslint: ^7.32.0
-    typescript: ^4.4.2
-  checksum: 193e6d175f72719e57ef574e22fc1418ee61c6f88e9057561dc8e3836439de5c375012f55eb9ee16ae4ba7c28c69587a69d35ee901cfffc50f2b97707a128eb5
-  languageName: node
-  linkType: hard
-
-"@techmely/eslint-config-ts@workspace:kimochi/typescript":
+"@techmely/eslint-config-ts@^0.0.7, @techmely/eslint-config-ts@workspace:kimochi/typescript":
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-ts@workspace:kimochi/typescript"
   dependencies:
@@ -406,7 +382,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-vue-ts@workspace:kimochi/vue"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.4
+    "@techmely/eslint-config-ts": ^0.0.7
     eslint-plugin-vue: ^7.17.0
   peerDependencies:
     eslint: ^7.32.0
