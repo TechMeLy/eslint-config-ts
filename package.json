@@ -19,7 +19,7 @@
     "bump:check": "yarn version check"
   },
   "devDependencies": {
-    "bumpp": "^6.0.6",
+    "bumpp": "^7.1.1",
     "fast-glob": "^3.2.7",
     "prettier": "^2.3.2",
     "sucrase": "^3.20.1"

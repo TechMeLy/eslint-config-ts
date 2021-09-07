@@ -1,0 +1,6 @@
+releases:
+  "@techmely/eslint-config": patch
+  "@techmely/eslint-config-react-ts": patch
+  "@techmely/eslint-config-svelte-ts": patch
+  "@techmely/eslint-config-ts": patch
+  "@techmely/eslint-config-vue-ts": patch

@@ -18,7 +18,7 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@techmely/eslint-config-ts": "^0.0.7",
+    "@techmely/eslint-config-ts": "^0.0.8",
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-svelte3": "^3.2.0"
   },

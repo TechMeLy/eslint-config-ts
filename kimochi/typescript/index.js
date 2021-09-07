@@ -20,6 +20,7 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
     'plugin:jsonc/recommended-with-jsonc',
+    'plugin:jsdoc/recommended',
     'plugin:yml/standard',
     'plugin:jest/recommended',
   ],
