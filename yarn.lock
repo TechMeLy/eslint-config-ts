@@ -341,7 +341,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-react-ts@workspace:kimochi/react"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.8
+    "@techmely/eslint-config-ts": ^0.0.9
     eslint-plugin-cypress: ^2.11.3
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.25.1
@@ -356,7 +356,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-svelte-ts@workspace:kimochi/svelte"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.8
+    "@techmely/eslint-config-ts": ^0.0.9
     eslint-plugin-cypress: ^2.11.3
     eslint-plugin-svelte3: ^3.2.0
   peerDependencies:
@@ -366,7 +366,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@techmely/eslint-config-ts@^0.0.8, @techmely/eslint-config-ts@workspace:kimochi/typescript":
+"@techmely/eslint-config-ts@^0.0.9, @techmely/eslint-config-ts@workspace:kimochi/typescript":
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-ts@workspace:kimochi/typescript"
   dependencies:
@@ -394,7 +394,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-vue-ts@workspace:kimochi/vue"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.8
+    "@techmely/eslint-config-ts": ^0.0.9
     eslint-plugin-vue: ^7.17.0
   peerDependencies:
     eslint: ^7.32.0

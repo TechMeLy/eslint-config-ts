@@ -4,6 +4,20 @@ Basically, this base on `air-bnb-style` for typescript enterprise projects. It's
 
 Let's try this and it will never let you down! Hope you enjoy this with your team!
 
+## Eslint base config includes
+
+- eslint-config-airbnb
+- eslint-config-prettier
+- eslint-plugin-html
+- eslint-plugin-import
+- eslint-plugin-jest
+- eslint-plugin-jsdoc
+- eslint-plugin-jsonc
+- eslint-plugin-promise
+- eslint-plugin-simple-import-sort
+- eslint-plugin-unicorn
+- eslint-plugin-yml
+
 ## Install and Use
 
 | Package Manager | Command                                              |
