@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow yarn",
-    "release": "bumpp --commit --push --tag && yarn publish",
+    "release": "yarn publish && bumpp --commit --push --tag",
     "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish",
     "copy-readme-to-packages": "sucrase-node scripts/copyReadmeToPackages",
     "bump": "yarn version apply --all",
