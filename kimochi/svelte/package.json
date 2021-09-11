@@ -20,7 +20,7 @@
   "dependencies": {
     "@techmely/eslint-config-ts": "^0.0.10",
     "eslint-plugin-cypress": "^2.11.3",
-    "eslint-plugin-svelte3": "^3.2.0"
+    "eslint-plugin-svelte3": "^3.2.1"
   },
   "repository": {
     "type": "git",

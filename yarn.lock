@@ -358,7 +358,7 @@ __metadata:
   dependencies:
     "@techmely/eslint-config-ts": ^0.0.10
     eslint-plugin-cypress: ^2.11.3
-    eslint-plugin-svelte3: ^3.2.0
+    eslint-plugin-svelte3: ^3.2.1
   peerDependencies:
     eslint: ^7.32.0
     svelte: ^3.42.4
@@ -381,7 +381,7 @@ __metadata:
     eslint-plugin-jsonc: ^1.6.0
     eslint-plugin-promise: ^5.1.0
     eslint-plugin-simple-import-sort: ^7.0.0
-    eslint-plugin-unicorn: ^35.0.0
+    eslint-plugin-unicorn: ^36.0.0
     eslint-plugin-yml: ^0.10.0
     yaml-eslint-parser: ^0.4.1
   peerDependencies:
@@ -408,7 +408,7 @@ __metadata:
   dependencies:
     bumpp: ^7.1.1
     fast-glob: ^3.2.7
-    prettier: ^2.3.2
+    prettier: ^2.4.0
     sucrase: ^3.20.1
   languageName: unknown
   linkType: soft
@@ -1339,19 +1339,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte3@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "eslint-plugin-svelte3@npm:3.2.0"
+"eslint-plugin-svelte3@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "eslint-plugin-svelte3@npm:3.2.1"
   peerDependencies:
     eslint: ">=6.0.0"
     svelte: ^3.2.0
-  checksum: 8d29f1fed24ffab4d75a01ff7c8c5e61415e0a5d89e705beefb2fb2961156aaf04473774d6cefe24be68156dcd93684819fbed49d9895fe0d19933def39e20ef
+  checksum: a59233f29f714f55b90fd61f21bfd0ab93b5ed7655dd4b7c52c6da9e957bae3aace90d3485060e496cde9685c2a80bd0ffeed6fc0cf3da1fc3e050c66cc3db7a
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^35.0.0":
-  version: 35.0.0
-  resolution: "eslint-plugin-unicorn@npm:35.0.0"
+"eslint-plugin-unicorn@npm:^36.0.0":
+  version: 36.0.0
+  resolution: "eslint-plugin-unicorn@npm:36.0.0"
   dependencies:
     "@babel/helper-validator-identifier": ^7.14.9
     ci-info: ^3.2.0
@@ -1366,8 +1366,8 @@ __metadata:
     safe-regex: ^2.1.1
     semver: ^7.3.5
   peerDependencies:
-    eslint: ">=7.28.0"
-  checksum: d7ba6f5b80a527f0a2c16572922b325009418086a53cdfcbcca711c1f4f863e4eae8692b046c10e6213beeee208f880f88b140806207a68a7d04cf8680677d19
+    eslint: ">=7.32.0"
+  checksum: 8c1051036b65509228639bdf7eafaa034982985071a817a3b275f58b68ad525e8741eca2ba0a2b56cd8b5e82b9a8911bd1f65456659cdef267e9e230d2edd1e3
   languageName: node
   linkType: hard
 
@@ -2437,12 +2437,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "prettier@npm:2.3.2"
+"prettier@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "prettier@npm:2.4.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 17ce5784ac67621c292df58e2da60b2ee150c2d6aebea22a6ad9e52fcd6a5e66c349d0a8436ea3bd8ff9d778920a5f68000d7625b74f43558718a49755aa5259
+  checksum: ac1bf07566dad5f58469e6d8a954bd5c0f833935597deb00330e9f673e14e4cf81e07dee7eff5776c0edebe11358d199f332d9940be40c8b455516034e553ce0
   languageName: node
   linkType: hard
 
