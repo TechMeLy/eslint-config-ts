@@ -23,6 +23,7 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:yml/standard',
     'plugin:jest/recommended',
+    'plugin:regexp/recommended',
   ],
   plugins: ['html', 'simple-import-sort'],
   settings: {
