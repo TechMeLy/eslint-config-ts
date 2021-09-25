@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-react-ts",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Eslint config for React + Typescript project",
   "keywords": [
     "eslint",

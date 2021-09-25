@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-vue-ts",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Eslint config for Vue + Typescript project",
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
