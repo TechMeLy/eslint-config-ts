@@ -66,6 +66,10 @@ module.exports = {
           '__DEV__',
           '__PRODUCTION__',
           '__TEST__',
+          '__SSR__',
+          '__BROWSER__',
+          '__ESM_BUNDLER__',
+          '__ESM_BROWSER__',
         ],
       },
       {
