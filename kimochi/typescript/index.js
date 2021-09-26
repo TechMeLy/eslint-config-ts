@@ -350,8 +350,9 @@ module.exports = {
     {
       files: ['*.js'],
       rules: {
-        // Allow `require()`
+        // Allow `require() and module.exports`
         '@typescript-eslint/no-var-requires': 'off',
+        'unicorn/prefer-module': 'off',
       },
     },
     {
