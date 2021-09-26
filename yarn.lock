@@ -341,7 +341,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-react-ts@workspace:kimochi/react"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.14
+    "@techmely/eslint-config-ts": ^0.0.15
     eslint-plugin-cypress: ^2.12.1
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.26.0
@@ -356,7 +356,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-svelte-ts@workspace:kimochi/svelte"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.14
+    "@techmely/eslint-config-ts": ^0.0.15
     eslint-plugin-cypress: ^2.12.1
     eslint-plugin-svelte3: ^3.2.1
   peerDependencies:
@@ -366,7 +366,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@techmely/eslint-config-ts@^0.0.14, @techmely/eslint-config-ts@workspace:kimochi/typescript":
+"@techmely/eslint-config-ts@^0.0.15, @techmely/eslint-config-ts@workspace:kimochi/typescript":
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-ts@workspace:kimochi/typescript"
   dependencies:
@@ -380,7 +380,6 @@ __metadata:
     eslint-plugin-jsdoc: ^36.1.0
     eslint-plugin-jsonc: ^1.7.0
     eslint-plugin-promise: ^5.1.0
-    eslint-plugin-regexp: ^1.3.0
     eslint-plugin-simple-import-sort: ^7.0.0
     eslint-plugin-unicorn: ^36.0.0
     eslint-plugin-yml: ^0.10.1
@@ -395,7 +394,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@techmely/eslint-config-vue-ts@workspace:kimochi/vue"
   dependencies:
-    "@techmely/eslint-config-ts": ^0.0.14
+    "@techmely/eslint-config-ts": ^0.0.15
     eslint-plugin-vue: ^7.18.0
   peerDependencies:
     eslint: ^7.32.0
@@ -902,7 +901,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"comment-parser@npm:1.2.4, comment-parser@npm:^1.1.2":
+"comment-parser@npm:1.2.4":
   version: 1.2.4
   resolution: "comment-parser@npm:1.2.4"
   checksum: 36ac280bce4c472fac22b3ec4d8aebb4d3d7c22c6808c70174f4deabee3b82144db66f8bd61eca9c514a6d0f12f6087ddab99e7d531e660d0da793b4730fd445
@@ -1365,24 +1364,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-regexp@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "eslint-plugin-regexp@npm:1.3.0"
-  dependencies:
-    comment-parser: ^1.1.2
-    eslint-utils: ^3.0.0
-    grapheme-splitter: ^1.0.4
-    jsdoctypeparser: ^9.0.0
-    refa: ^0.9.0
-    regexp-ast-analysis: ^0.3.0
-    regexpp: ^3.2.0
-    scslre: ^0.1.6
-  peerDependencies:
-    eslint: ">=6.0.0"
-  checksum: 96b915c8cfdbab6d765379f1846288bcd0908aad2ec75429ba396e3c1d5256c1c7f4495d02871bf4d83b3779fdeb29a986f11093050bab546f67b0f2db85b619
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-simple-import-sort@npm:^7.0.0":
   version: 7.0.0
   resolution: "eslint-plugin-simple-import-sort@npm:7.0.0"
@@ -1720,13 +1701,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"grapheme-splitter@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "grapheme-splitter@npm:1.0.4"
-  checksum: 0c22ec54dee1b05cd480f78cf14f732cb5b108edc073572c4ec205df4cd63f30f8db8025afc5debc8835a8ddeacf648a1c7992fe3dcd6ad38f9a476d84906620
-  languageName: node
-  linkType: hard
-
 "has-bigints@npm:^1.0.1":
   version: 1.0.1
   resolution: "has-bigints@npm:1.0.1"
@@ -1972,15 +1946,6 @@ __metadata:
   version: 1.1.1
   resolution: "jsdoc-type-pratt-parser@npm:1.1.1"
   checksum: 90522d1da193e1280c3e041561de20cb2f580dd823ad60f5c08e8f429dacc2e944259ed682c98c62d32f3fc8148a79becb47a47455a8093cebb5377b1c2ecbf2
-  languageName: node
-  linkType: hard
-
-"jsdoctypeparser@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "jsdoctypeparser@npm:9.0.0"
-  bin:
-    jsdoctypeparser: bin/jsdoctypeparser
-  checksum: d9fd932fc657ee8df93b112ceb23f0c27862da7302c27325101d3700110d78d264f9ef08837ed84e7dd47b83657ffb323b47b1942b237111055cefb647b4a8ba
   languageName: node
   linkType: hard
 
@@ -2597,39 +2562,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"refa@npm:^0.9.0":
-  version: 0.9.1
-  resolution: "refa@npm:0.9.1"
-  dependencies:
-    regexpp: ^3.2.0
-  checksum: 34a1483a37a477d91b8c8fab50c0cf19987a1bfe214bfa74205a2159c93313f6b323609b7a1634f489f430db2622d3fde0a25c7486ae7c06665b92041376d89c
-  languageName: node
-  linkType: hard
-
 "regenerator-runtime@npm:^0.13.4":
   version: 0.13.9
   resolution: "regenerator-runtime@npm:0.13.9"
   checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
-  languageName: node
-  linkType: hard
-
-"regexp-ast-analysis@npm:^0.2.3":
-  version: 0.2.4
-  resolution: "regexp-ast-analysis@npm:0.2.4"
-  dependencies:
-    refa: ^0.9.0
-    regexpp: ^3.2.0
-  checksum: 27a180c41dcbc3f7b655f0b5b9d97a556440815c3cd07aea1be6c3b5e4baae7ad8a9abd5fe6a4d635d4350c3021d16642dc6e2e97a15f2f703d965dcdad4a5fb
-  languageName: node
-  linkType: hard
-
-"regexp-ast-analysis@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "regexp-ast-analysis@npm:0.3.0"
-  dependencies:
-    refa: ^0.9.0
-    regexpp: ^3.2.0
-  checksum: 5cde7dd00c8f966eb13e56ecd549da90d52a533e03af1ec7e5047bba4f3d29d291fa94c64c03b17573c6553110a035b621f0f8f8fff1eeaf1fea8c68fd9f0a1e
   languageName: node
   linkType: hard
 
@@ -2652,7 +2588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regexpp@npm:^3.1.0, regexpp@npm:^3.2.0":
+"regexpp@npm:^3.1.0":
   version: 3.2.0
   resolution: "regexpp@npm:3.2.0"
   checksum: a78dc5c7158ad9ddcfe01aa9144f46e192ddbfa7b263895a70a5c6c73edd9ce85faf7c0430e59ac38839e1734e275b9c3de5c57ee3ab6edc0e0b1bdebefccef8
@@ -2735,17 +2671,6 @@ resolve@^2.0.0-next.3:
   dependencies:
     regexp-tree: ~0.1.1
   checksum: 5d734e2193c63ef0cb00f60c0244e0f8a30ecb31923633cd34636808d6a7c4c206d650017953ae1db8bc33967c2f06af33488dea6f038f4e38212beb7bed77b4
-  languageName: node
-  linkType: hard
-
-"scslre@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "scslre@npm:0.1.6"
-  dependencies:
-    refa: ^0.9.0
-    regexp-ast-analysis: ^0.2.3
-    regexpp: ^3.2.0
-  checksum: 6b079a3325c1bbeef091aa4f9f8e2535b1467aa9baa38667c0033d483ec46c4e922a9fbaab8cced359f4fae87cbf275499932266e5df06c7e4028e0c84d227ff
   languageName: node
   linkType: hard
 
