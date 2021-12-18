@@ -1,0 +1,5 @@
+undecided:
+  - "@techmely/eslint-config"
+  - "@techmely/eslint-config-react-ts"
+  - "@techmely/eslint-config-svelte-ts"
+  - "@techmely/eslint-config-ts"

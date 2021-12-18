@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-react-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint config for React + Typescript project",
   "keywords": [
     "eslint",
@@ -21,11 +21,11 @@
     "version:patch": "yarn version patch -i"
   },
   "peerDependencies": {
-    "eslint": "8.1.0",
-    "typescript": "4.4.4"
+    "eslint": "^8.5.0",
+    "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@techmely/eslint-config-ts": "1.0.0",
+    "@techmely/eslint-config-ts": "1.0.1",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.27.1",
