@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config-ts",
-  "version": "0.0.16",
+  "version": "1.0.0",
   "description": "Eslint base config for typescript project",
   "keywords": [],
   "license": "MIT",
@@ -14,7 +14,9 @@
     "access": "public"
   },
   "scripts": {
-    "version": "yarn version"
+    "version:major": "yarn version major -i",
+    "version:minor": "yarn version minor -i",
+    "version:patch": "yarn version patch -i"
   },
   "peerDependencies": {
     "eslint": "8.1.0",
