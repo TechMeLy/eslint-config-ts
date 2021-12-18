@@ -1,6 +1,6 @@
 {
   "name": "@techmely/eslint-config",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "license": "MIT",
   "author": "Harry Tran <nhattq.coding@gmail.com> (https://ebugkia.com)",
   "repository": {
@@ -16,7 +16,7 @@
     "publish": "yarn copy-readme-to-packages && yarn bump && yarn workspaces foreach -pv --exclude @techmely/eslint-config npm publish --tolerate-republish",
     "copy-readme-to-packages": "sucrase-node scripts/copyReadmeToPackages",
     "bump": "yarn version apply --all",
-    "bump:check": "yarn version check --interactive"
+    "bump:patch": "yarn workspaces foreach run version:patch"
   },
   "devDependencies": {
     "bumpp": "7.1.1",
