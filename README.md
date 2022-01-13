@@ -1,4 +1,7 @@
-# Eslint base config with typescript in practice
+# Move to techmely/techmely monorepo
+----------------------
+
+## Eslint base config with typescript in practice
 
 Basically, this base on `air-bnb-style` for typescript enterprise projects. It's good for DX and might be strict for consistency and professionalism.
 
